@@ -4,6 +4,8 @@ A custom-built Transformer model trained to think and speak like legendary inves
 
 ## 🚀 Project Overview
 
+**[🔴 Live Demo: Chat with Peter Lynch](https://ashishnevan-lynchstreamlit-app-cw5l66.streamlit.app/)**
+
 This project implements a **sequence-to-sequence Transformer** model from scratch using TensorFlow/Keras. It is designed to learn the semantic relationships between financial questions and Peter Lynch's investment philosophy, acting as a domain-specific conversational agent.
 
 ### Technical Highlights

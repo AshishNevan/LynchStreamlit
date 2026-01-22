@@ -1034,11 +1034,6 @@ dependencies = [
     { name = "tensorflow-datasets" },
 ]
 
-[package.dev-dependencies]
-dev = [
-    { name = "lynchstreamlit" },
-]
-
 [package.metadata]
 requires-dist = [
     { name = "matplotlib", specifier = "==3.9.2" },
@@ -1051,9 +1046,6 @@ requires-dist = [
     { name = "tensorflow", specifier = "==2.18.0" },
     { name = "tensorflow-datasets", specifier = "==4.9.7" },
 ]
-
-[package.metadata.requires-dev]
-dev = [{ name = "lynchstreamlit", editable = "." }]
 
 [[package]]
 name = "markdown"

@@ -23,16 +23,3 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = ['src']
 include = ['lynchstreamlit*']
-
-[tool.uv.workspace]
-members = [
-    ".",
-]
-
-[tool.uv.sources]
-lynchstreamlit = { workspace = true, editable = true }
-
-[dependency-groups]
-dev = [
-    "lynchstreamlit",
-]
