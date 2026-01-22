@@ -1,0 +1,38 @@
+[project]
+name = "lynchstreamlit"
+version = "0.1.0"
+description = "Transformer-based Q&A bot for Peter Lynch's book 'One Up on Wall Street'"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib==3.9.2",
+    "nltk>=3.9.2",
+    "numpy==2.0.2",
+    "pandas==2.2.3",
+    "rouge>=1.0.1",
+    "scikit-learn>=1.7.2",
+    "streamlit==1.40.2",
+    "tensorflow==2.18.0",
+    "tensorflow-datasets==4.9.7",
+]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ['src']
+include = ['lynchstreamlit*']
+
+[tool.uv.workspace]
+members = [
+    ".",
+]
+
+[tool.uv.sources]
+lynchstreamlit = { workspace = true, editable = true }
+
+[dependency-groups]
+dev = [
+    "lynchstreamlit",
+]
